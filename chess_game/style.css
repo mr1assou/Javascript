@@ -1,0 +1,147 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#game-board{
+    width: 400px;
+    height: 400px;
+    background:#fff;
+    display: flex;
+    flex-wrap:wrap;
+    display: none;
+}
+.square{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.square svg{
+    height: 30px;
+    width: 30px;
+    z-index:999;
+}
+path{
+    z-index: -999;
+}
+.black{
+    background: black;
+}
+.white{
+    background: white;
+}
+.grey{
+    fill: grey;
+}
+.brown{
+    fill:brown;
+}
+p{
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    background: #fff;
+    padding: 5px 20px;
+    border-radius: 10px;
+    display: none;
+}
+.section{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: block;
+}
+.play{
+    background: transparent;
+    z-index: 999;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 5px 30px;
+    outline: none;
+    border: none;
+    color:white;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+span{
+    margin-right: 5px;
+}
+#play-button{
+    position: absolute;
+    top: 8%;
+    right: 8%;
+    outline: none;
+    border: none;
+    display: none;
+    cursor: pointer;
+}
+#play-button i{
+    font-size: 30px;
+    color: black;
+    background: white;
+    padding: 7px;
+    border-radius: 50%;
+}
+.choices{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width:100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+    transform: translateY(-50%);
+    background: #fff;
+    border-radius: 10px;
+    transform: translateX(-100%);
+    transition: all 0.3s linear;
+}
+.choices div{
+    text-align: center;
+    padding:10px 0;
+    position: relative;
+    cursor: pointer;
+}
+.choices div::after{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 1px;
+    background: grey;
+    bottom: 0;
+    left: 0;
+    opacity: 0.2;
+    transition: all 0.3s linear;
+}
+.choices div:hover::after{
+    width: 100%;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image:url(./rafael-rex-felisilda-U_Kz2RnfFAk-unsplash\ \(1\).jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

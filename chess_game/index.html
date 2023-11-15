@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chess</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="body">
+    <div class="banner">
+      <audio
+        id="background-music"
+        src="./Aakash Gandhi - Liquid Time.mp3"
+        preload="auto"
+      ></audio>
+      <button id="play-button"><i class="fa-solid fa-music"></i></button>
+
+      <p class="paragraph"><span class="player">grey</span>player Go</p>
+      <div id="game-board"></div>
+      <div class="choices">
+        <div class="choose-element">queen</div>
+        <div class="choose-element">knight</div>
+        <div class="choose-element">rook</div>
+        <div class="choose-element">bishop</div>
+      </div>
+      <button class="play">Play</button>
+    </div>
+    <!-- javascript-->
+    <script src="pieces.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
