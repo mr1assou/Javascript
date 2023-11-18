@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>students management</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="grid-container">
+      <header class="header">
+        <div class="sidebar-btn">
+          <i class="fa-solid fa-bars toggle-btn"></i>
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="search student...." />
+          <button class="search-btn">
+            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <button class="add-student"><i class="fa-solid fa-plus"></i></button>
+      </header>
+      <aside class="sidebar">
+        <button class="close"><i class="fa-solid fa-xmark"></i></button>
+        <div class="logo">School</div>
+        <div class="classrooms">
+          <p class="categorie">ALL</p>
+          <p class="categorie">1er College</p>
+          <p class="categorie">2eme College</p>
+          <p class="categorie">3eme College</p>
+          <p class="categorie">Tronc Commun</p>
+          <p class="categorie">1er Bac</p>
+          <p class="categorie">2eme Bac</p>
+        </div>
+      </aside>
+      <main class="container">
+        <!-- <div class="student">
+          <div class="image">
+            <img src="./blank.png" alt="" class="profile-image" />
+            <button class="add-image"><i class="fa-solid fa-plus"></i></button>
+            <input type="file" id="file" class="file" />
+          </div>
+          <div class="identification green">
+            <p>Marwane Assou</p>
+            <p class="year">3rd year</p>
+            <div class="timer">
+              <span>0</span
+              >days<span>0</span>hrs<span>0</span>min<span>0</span>sec
+            </div>
+          </div>
+          <div class="button">
+            <button class="btn stretch-time">
+              <i class="fa-solid fa-recycle"></i>
+            </button>
+            <button class="btn delete">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+            <button class="btn edit">
+              <i class="fa-solid fa-pen-to-square"></i>
+            </button>
+          </div>
+        </div> -->
+        <div class="form-new-student">
+          <form class="form">
+            <div class="form-block">
+              <label for="first-name">First name:</label>
+              <input type="text" id="first-name" required />
+            </div>
+            <div class="form-block">
+              <label for="second-name">Second name:</label>
+              <input type="text" id="second-name" required />
+            </div>
+            <div class="form-block">
+              <label for="number-phone">Number Phone:</label>
+              <input type="number" id="number-phone" required />
+            </div>
+            <div class="form-block">
+              <p>Level:</p>
+              <div class="inline">
+                <label for="1er college" class="inline">1er college</label>
+                <input
+                  type="radio"
+                  id="1er college"
+                  name="level"
+                  value="beginner"
+                  class="inline"
+                />
+              </div>
+              <div class="inline">
+                <label for="2eme college" class="inline">2eme college</label>
+                <input
+                  type="radio"
+                  id="2eme college"
+                  name="level"
+                  value="beginner"
+                  class="inline"
+                  required
+                />
+              </div>
+              <div class="inline">
+                <label for="3eme college" class="inline">3eme college</label>
+                <input
+                  type="radio"
+                  id="3eme college"
+                  name="level"
+                  value="beginner"
+                  class="inline"
+                />
+              </div>
+              <div class="inline">
+                <label for="tronc commun" class="inline">Tronc commun</label>
+                <input
+                  type="radio"
+                  id="tronc commun"
+                  name="level"
+                  value="beginner"
+                  class="inline"
+                />
+              </div>
+              <div class="inline">
+                <label for="1er Bac" class="inline">1er Bac</label>
+                <input
+                  type="radio"
+                  id="1er Bac"
+                  name="level"
+                  value="beginner"
+                  class="inline"
+                />
+              </div>
+              <div class="inline">
+                <label for="2eme Bac" class="inline">2eme Bac</label>
+                <input
+                  type="radio"
+                  id="2eme Bac"
+                  name="level"
+                  value="beginner"
+                  class="inline"
+                />
+              </div>
+            </div>
+            <button type="submit" class="submit">Submit</button>
+          </form>
+        </div>
+      </main>
+    </div>
+    <!-- javascript -->
+    <script src="app.js"></script>
+  </body>
+</html>
